@@ -7,10 +7,10 @@ namespace MediatorDesignPatternExample
     {
         static void Main(string[] args)
         {
-            var room = new ChatRoom();
+            ChatRoom room = new ChatRoom();
 
-            var john = new Person("John");
-            var jane = new Person("Jane");
+            Participant john = new Person("John");
+            Participant jane = new Person("Jane");
 
             room.Join(john);
             room.Join(jane);
